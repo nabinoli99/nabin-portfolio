@@ -259,7 +259,7 @@ export default function PortfolioPage() {
                 My Docker setups ensure consistent environments across Dev, Test, and Prod.
               </p>
               <div className="space-y-4">
-                 <ArchStep icon={<Server/>} title="Ingress" desc="Nginx handling SSL and Rate Limiting." />
+                 <ArchStep icon={<Server/>} title="Postgres" desc="Nginx handling SSL and Rate Limiting." />
                  <ArchStep icon={<Lock/>} title="Security" desc="Custom Spring Security Filter Chain." />
                  <ArchStep icon={<Database/>} title="Data" desc="MySQL with Liquibase Migrations." />
               </div>
