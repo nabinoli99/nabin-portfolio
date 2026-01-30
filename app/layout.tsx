@@ -13,7 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 // UPDATED METADATA SECTION
-export const metadata: Metadata = {
+export const metadata: Metadata =
+{
+  metadataBase: new URL('https://nabinoli.vercel.app/'),
   title: "Nabin Oli",
   description: "Backend Architect specializing in Java, Spring Boot, and C++. Action without planning is the cause of every failure.",
   keywords: ["Nabin Oli", "Backend Architect", "Java Developer Nepal", "Software Engineer"],

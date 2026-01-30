@@ -290,17 +290,81 @@ export default function PortfolioPage() {
            <p className="text-slate-400 max-w-lg mx-auto mb-10 text-sm">
              Always looking for code reviews, mentorship, or internship opportunities in backend engineering.
            </p>
-           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={`mailto:${email}`}><Button size="lg" className="bg-sky-600 hover:bg-sky-500 font-black uppercase text-xs tracking-widest px-10 h-14">Send Message</Button></a>
-              <a href={github}><Button size="lg" variant="outline" className="border-white/10 h-14 px-10 font-black uppercase text-xs">Explore GitHub</Button></a>
-           </div>
+           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+  {/* Open Email Client */}
+  <a href={`mailto:${email}`} className="w-full sm:w-auto">
+    <Button size="lg" className="w-full bg-sky-600 hover:bg-sky-500 font-black uppercase text-xs tracking-widest px-10 h-14">
+      Send Message
+    </Button>
+  </a>
+
+  {/* Open GitHub in New Tab */}
+  <a
+    href={github}
+    target="_blank"
+    rel="noreferrer"
+    className="w-full sm:w-auto"
+  >
+    <Button size="lg" variant="outline" className="w-full border-white/10 h-14 px-10 font-black uppercase text-xs">
+      Explore GitHub
+    </Button>
+  </a>
+</div>
         </section>
 
       </main>
 
-      <footer className="py-12 border-t border-white/5 text-center">
-         <p className="text-[10px] font-mono text-slate-500 uppercase tracking-[0.4em]">© 2026 NABIN_OLI // BUILT_WITH_SPRING_MINDSET</p>
-      </footer>
+   <footer className="py-12 border-t border-white/5 bg-black">
+  <div className="max-w-7xl mx-auto px-6">
+    {/* Main Container: Stacks on mobile, Rows on Laptop */}
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+
+      {/* 1. Brand Section */}
+      <div className="space-y-2">
+        <p className="text-[10px] font-mono text-slate-500 uppercase tracking-[0.4em]">
+          © 2026 NABIN_OLI
+        </p>
+        <p className="text-[9px] font-mono text-sky-500/50 uppercase">
+          Class 12 @ Liverpool International College
+        </p>
+      </div>
+
+      {/* 2. Contact Grid: Stays organized on all screens */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12 w-full md:w-auto">
+
+        {/* Location Item */}
+        <div className="flex items-center gap-4 group">
+          <div className="p-2 bg-white/5 rounded-lg group-hover:bg-sky-500/10 transition-colors">
+            <Globe size={16} className="text-sky-500" />
+          </div>
+          <div>
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Location</p>
+            <p className="text-sm text-slate-200 font-mono">Kathmandu, Nepal</p>
+          </div>
+        </div>
+
+        {/* Contact Item */}
+        <div className="flex items-center gap-4 group">
+          <div className="p-2 bg-white/5 rounded-lg group-hover:bg-sky-500/10 transition-colors">
+            <Mail size={16} className="text-sky-500" />
+          </div>
+          <div>
+            <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Contact</p>
+            <p className="text-sm text-slate-200 font-mono">nabinstrivex@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {/* Bottom micro-bar for mobile polish */}
+    <div className="mt-12 pt-6 border-t border-white/[0.02] flex justify-center md:justify-start">
+       <span className="text-[8px] font-mono text-slate-600 uppercase tracking-tighter">
+         System Status: 200 OK // Portfolio Portion: Active
+       </span>
+    </div>
+  </div>
+</footer>
 
       {/* 8. MODAL / DOCS VIEWER */}
       <AnimatePresence>
