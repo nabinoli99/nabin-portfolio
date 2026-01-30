@@ -12,9 +12,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// UPDATED METADATA SECTION
 export const metadata: Metadata = {
-  title: "Nabin Oli",
-  description: "Action without planning is the cause of every failure."
+  title: "Nabin Oli | Backend Architect",
+  description: "Backend Architect specializing in Java, Spring Boot, and C++. Action without planning is the cause of every failure.",
+  keywords: ["Nabin Oli", "Backend Architect", "Java Developer Nepal", "Software Engineer"],
+  openGraph: {
+    title: "Nabin Oli | Backend Architect",
+    description: "Systems and APIs designed for scalability.",
+    url: "https://nabinoli.vercel.app",
+    siteName: "Nabin Oli Portfolio",
+    images: [
+      {
+        url: "/Finley.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nabin Oli Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
