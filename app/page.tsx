@@ -137,7 +137,7 @@ export default function PortfolioPage() {
           <div className="lg:col-span-5 relative">
             <div className="absolute inset-0 bg-sky-500/10 blur-[120px] rounded-full animate-pulse" />
             <div className="relative aspect-square rounded-[3rem] overflow-hidden border border-white/10 group bg-[#0a0a0a]">
-              <img src="/Finley.jpg" alt="Nabin Oli" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+             <img src="/Finley.jpg" alt="Nabin Oli" className="w-full h-full object-cover grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-700"/>
               <div className="absolute bottom-6 left-6 right-6 p-6 bg-black/60 backdrop-blur-xl rounded-2xl border border-white/10 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
                 <p className="text-xs font-mono text-sky-400 mb-1">CURRENT_STACK</p>
                 <p className="text-sm font-bold text-white">Java, Spring Boot, MySQL</p>
