@@ -26,7 +26,7 @@ export const metadata: Metadata =
   },
 
   openGraph: {
-    title: "Nabin Oli | Backend Architect",
+    title: "Nabin Oli",
     description: "Systems and APIs designed for scalability.",
     url: "https://nabinoli.vercel.app",
     siteName: "Nabin Oli Portfolio",
