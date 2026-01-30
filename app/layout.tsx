@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "Nabin Oli | Backend Architect",
   description: "Backend Architect specializing in Java, Spring Boot, and C++. Action without planning is the cause of every failure.",
   keywords: ["Nabin Oli", "Backend Architect", "Java Developer Nepal", "Software Engineer"],
+
+  // ADD THIS SECTION FOR GOOGLE VERIFICATION
+  verification: {
+    google: "HTTKLY0e2Rv_gtxR-kDJNw2BuAwJkuf5-C37piR8wtY",
+  },
+
   openGraph: {
     title: "Nabin Oli | Backend Architect",
     description: "Systems and APIs designed for scalability.",
@@ -33,7 +39,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
